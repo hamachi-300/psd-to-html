@@ -1,0 +1,733 @@
+/* change selection color */
+
+::selection {
+    background-color: grey;
+}
+
+/* font declar*/
+
+@font-face {
+    font-family: Maven-Pro;
+    src: url("font/MavenPro-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: IslandMoments;
+    src: url("font/IslandMoments-Regular.ttf");
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url("font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Domine;
+    src: url("font/BodoniModa-VariableFont_opsz\,wght.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*********************************************** HOME ******************************************************/
+
+.home {
+    color: #ffffff;
+    background: url("src/home/BG.png");
+    background-size: cover;
+    height: 911px;
+    text-align: center;
+    position: relative;
+}
+
+/* navigate bar */
+.home .nav-bar {
+    font-family: Maven-Pro;
+    padding-top: 60px;
+}
+
+.home .nav-bar ul {
+    list-style: none;
+}
+
+.home .nav-bar li {
+    opacity: 0.8;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.home .nav-bar a {
+    color: #fff;
+}
+
+.home .nav-bar .list {
+    text-decoration: none;
+    border-bottom: 2px solid rgb(255, 255, 255, 0);
+    transition: border-bottom 0.2s ease 0.2s;
+}
+
+.home .nav-bar .list:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.home .nav-bar .icon {
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.2s ease 0.2s;
+}
+
+.home .nav-bar .icon:hover {
+    opacity: 1;
+}
+
+/* logo */
+.home .logo {
+    margin-top: 150px;
+}
+
+/* name */
+.home .name {
+    font-family: IslandMoments;
+    font-size: 70px;
+}
+
+.home .cover-line {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.home .line {
+    width: 450px;
+    border-bottom: 2px solid #fff;
+    opacity: 0.5;
+}
+
+/* title and content*/
+.home .title {
+    font-family: Domine;
+    font-size: 100px;
+    margin: 50px 0;
+}
+
+
+.home .content-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.home .content p {
+    font-size: 22px;
+    font-family: Maven-Pro;
+    margin: 10px 0;
+    opacity: 0.9;
+}
+
+/* contact */
+.home .contact {
+    position: absolute;
+    right: 10px;
+    top: 400px;
+}
+
+.home .contact li{
+    list-style: none;
+    margin: 0 50px;
+    margin-bottom: 40px;
+    opacity: 0.5;
+    transition: opacity 0.2s ease 0.2s;
+}
+
+.home .contact li:hover {
+    opacity: 1;
+}
+
+/******************************************* ABOUT ******************************************/
+.about {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    color: black;
+}
+
+.about .item {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about .item img {
+    padding: 20px 0;
+}
+
+.about .item .line {
+    height: 100%;
+    border-left: 1px solid black;
+    margin: 0 50px;
+}
+
+.about .item .content {
+    height: auto;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.about .content h1 {
+    font-size: 100px;
+    font-family: IslandMoments;
+}
+
+.about .content p {
+    font-family: Maven-Pro;
+    margin-top: 4px;
+    opacity: 0.8;
+}
+
+.about .content a {
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 20px;
+    font-family: Maven-Pro;
+    transition: all 0.2s ease 0.2s;
+}
+
+.about .content a:hover {
+    color: white;
+    background-color: #333;
+}
+
+/***************************************************** PORTFOLIO *************************************************/
+.portfolio {
+    background: url("src/portfolio/BG.png");
+    width: 100%;
+    height: 416px;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .flower {
+    background: url("src/portfolio/flower.png");
+    height: 416px;
+    background-repeat: no-repeat;
+    width: 1332px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-family: IslandMoments;
+    font-size: 100px;
+    margin-top: 15px
+}
+
+.portfolio h1 {
+    color: white;
+    font-family: Domine;
+    font-size: 80px
+}
+
+.portfolio .cover-line {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .line {
+    width: 650px;
+    border-bottom: 2px solid white;
+    margin: 10px 0;
+}
+
+.portfolio h3 {
+    font-size: 35px;
+    font-family: Domine;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.portfolio a {
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 20px;
+    font-family: Maven-Pro;
+    transition: all 0.2s ease 0.2s;
+}
+
+.portfolio a:hover {
+    color: white;
+    background-color: #333;
+}
+
+.gallery {
+    height: auto;
+    padding: 50px 375px;;
+}
+
+.gallery .box {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.gallery .column {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.gallery img {
+    width: 100%;
+    padding: 15px 10px;
+}
+
+/**************************************************** VIDEO ***********************************************/
+
+.video {
+    height: 450px;
+    background: url("src/video/BG.png");
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* flowers */
+.video .flower-1 {
+    width: 245px;
+    height: 299px;
+    background: url("src/video/Flower-1.png");
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-repeat: no-repeat;
+}
+
+.video .flower-2 {
+    width: 192px;
+    height: 115px;
+    background: url("src/video/flower-2.png");
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+    background-repeat: no-repeat;
+}
+
+.video .flower-3 {
+    width: 245px;
+    height: 299px;
+    background: url("src/video/Flower-1.png");
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    transform: rotate(120deg);
+    background-repeat: no-repeat;
+}
+
+.video .flower-4 {
+    width: 214px;
+    height: 124px;
+    background: url("src/video/flower-3.png");
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+}
+
+/* content */
+.video .content {
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video h1 {
+    font-family: Domine;
+    color: white;
+    font-size: 80px;
+}
+
+.video .cover-line {
+    display: flex;
+    justify-content: center;
+}
+
+.video .content .line {
+    width: 250px;
+    border-bottom: 2px solid white;
+    margin: 20px 0;
+}
+
+.video p {
+    font-family: Domine;
+    font-size: 30px;
+    color: #222;
+}
+
+/* PICTURE SECTION */
+
+.sect-1 {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: 50px;
+} 
+
+.sect-1 .img-sect {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sect-1 .img {
+    background-image: url(src/video/big-img.png);
+    background-repeat: no-repeat;
+    width: 936px;
+    height: 521px;
+    position: relative;
+}
+
+.sect-1 .play-icon {
+    background-image: url(src/video/play-btn.png);
+    width: 114px;
+    height: 95px;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+}
+
+.sect-1 img {
+    margin: 15px 0
+}
+
+.sect-1 p {
+    font-family: Maven-Pro;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.sect-2 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: Maven-Pro;
+}
+
+.sect-2 .img-box {
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.sect-2 p {
+    margin: 10px 0;
+}
+
+.sect-2 .img-1 img{
+    width: cover;
+    height: cover;
+}
+
+.picture-sect .button {
+    width: auto;
+    border: 2px solid black;
+}
+
+.button-sect {
+    display: flex;
+    justify-content: center;
+}
+
+.button-sect a{
+    border: 1px solid #333;
+    font-family: Maven-Pro;
+    padding: 5px 20px;
+    color: #333;
+    text-decoration: none;
+    margin:40px 0;
+    transition: all 0.2s ease 0.2s
+}
+
+.button-sect a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.cover-line-sect {
+    display: flex;
+    justify-content: center;
+}
+
+.cover-line-sect .line {
+    border-bottom: 2px solid black;
+    width: 1150px;
+}
+
+/********************************************** THE TESTIMONIALS ****************************************/
+.testimonial {
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.testimonial h1 {
+    font-family: IslandMoments;
+    font-size: 100px
+}   
+
+.testimonial p {
+    font-family: Maven-Pro;
+    font-size: 50px;
+}
+
+.testimonial .line {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.testimonial .line a {
+    border: 1px solid #333;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #333;
+    font-family: Maven-Pro;
+    transition: all 0.2s ease 0.2s;
+    margin-bottom: 50px;
+}
+
+.testimonial .line a:hover{
+    color: white;
+    background-color: #333;
+}
+
+.testimonial .box {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.testimonial .card {
+    margin: 0 40px;
+    width: 300px;
+    height: auto;
+    border: 1px solid #333;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.testimonial .card .img {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: -150px;
+    left: 40px
+}
+
+.testimonial .card .img-1 {
+    background: url(src/testimonial/img-1.png);
+}
+
+.testimonial .card .img-2 {
+    background: url(src/testimonial/img-2.png);
+}
+
+.testimonial .card .img-3 {
+    background: url(src/testimonial/img-3.png);
+}
+
+.testimonial .card h1{
+    margin-top: 60px;
+    font-family: Domine;
+    font-size: 18px;
+}
+
+.testimonial .card p{
+    font-family: Maven-Pro;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+/******************************************************************* CONTACT ME ****************************************************************/
+
+.contact-me {
+    text-align: center;
+    background: url(src/contact/BG.png);
+    background-size: cover;
+    height: 800px;
+}
+
+.contact-me h1 {
+    font-family: IslandMoments;
+    font-size: 100px;
+    padding-top: 20px;
+}
+
+.contact-me h2 {
+    font-family: Maven-Pro;
+    font-weight: 100;
+    font-size: 50px;
+    margin-bottom: 20px
+}
+
+.contact-me .cover-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me .info {
+    border-top: 1px solid black;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contact-me .info .text {
+    text-align: start;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.contact-me .text p {
+    font-family: Maven-Pro;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.contact-me .text h1 {
+    font-family: Maven-Pro;
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-me .text input {
+    background: none;
+    border: 1px solid rgba(0, 0, 0);
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: Maven-Pro;
+    transition: border 100ms ease-in, background-color 100ms ease-in;
+}
+
+.contact-me .text input:focus {
+    border-color: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.contact-me .text input:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.contact-me .text textarea {
+    background: none;
+    border: 1px solid rgba(0, 0, 0);
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: Maven-Pro;
+    transition: border 100ms ease-in, background-color 100ms ease-in;
+}
+
+.contact-me .text textarea:focus {
+    border-color: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.contact-me .text textarea:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* FOOTER */
+
+footer {
+    background: url(src/footer/bg.png);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+/* narvigate bar */
+footer .nav-bar {
+    font-family: Maven-Pro;
+    padding-top: 100px;
+}
+
+footer .nav-bar ul {
+    list-style: none;
+}
+
+footer .nav-bar li {
+    opacity: 0.8;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+footer .nav-bar a {
+    color: #fff;
+}
+
+footer .nav-bar .list {
+    text-decoration: none;
+    border-bottom: 2px solid rgb(255, 255, 255, 0);
+    transition: border-bottom 0.2s ease 0.2s;
+}
+
+footer .nav-bar .list:hover {
+    border-bottom: 2px solid #fff;
+}
+
+footer .nav-bar .icon {
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.2s ease 0.2s;
+}
+
+footer .nav-bar .icon:hover {
+    opacity: 1;
+}
+
+footer #icons {
+    width: 200px;
+    height: 20px;
+    margin: 30px 0;
+}
+
+footer p {
+    line-height: 1.6;
+    font-family: Maven-Pro;
+}
+
+footer h3 {
+    margin-top: 40px;
+    font-family: Maven-Pro;
+    font-weight: 100;
+}
